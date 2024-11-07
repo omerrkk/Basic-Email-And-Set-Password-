@@ -1,1 +1,38 @@
+#include <iostream>
 
+using namespace std;
+int main()
+{	int password;
+	string email;
+	cout << "Please Enter Your Email Address = " << endl;
+	cin >> email;
+	cout << "Please Enter Your Password = ";
+	cin >>password;
+	cout << "Your Account Is Created You Can Log In" << endl;
+	
+	int passwordtry;
+	string emailtry;
+	cout << "Enter Your Email = " << endl;
+	cin >> emailtry;
+	if (emailtry == email) {
+		cout << "Your Email is Correct Now Enter Your Password = " << endl;
+		cin >> passwordtry;
+			if (passwordtry == password)
+			{
+				cout << "Your Password is Correct. Welcome!!" << endl;
+			}
+			else
+			{
+				cout << "Your Password is incorrect. Please try again" << endl;
+			}
+	}
+	else
+	{
+		cout << "Your Email is incorrect. Please Check Your Email!";
+	}
+	
+
+	
+	
+	return 0 ;
+}
